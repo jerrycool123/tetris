@@ -1,0 +1,30 @@
+- Macau's first online casino opens! Sexy cat deals online ><!
+
+- Game name: Tetris, aka "俄羅斯方塊" in Chinese.
+- Rules:
+    1. This is a 2-player game. You can invite your friend to play with you!
+    2. There are 7 different tetrominoes in total. 
+       One of them will be randomly generated on top of the 20x10 board. 
+       Every 0.8 second, it will drop automatically until it lands on an obstacle.
+	   Your goal is to fill a row to clear the row and score.
+    3. Scoring:
+        - Clear 1 line : 40
+        - Clear 2 lines: 100
+        - Clear 3 lines: 300
+        - Clear 4 lines: 1200
+    4. Keyboard Control:
+        - Arrow Key LEFT : Move tetromino to the left
+        - Arrow Key RIGHT: Move tetromino to the right
+        - Arrow Key DOWN : Force tetromino drop immediately
+        - KEYBOARD z     : Rotate tetromino counterclockwise
+        - KEYBOARD x     : Rotate tetromino clockwise
+        - KEYBOARD r     : Refresh the game interface
+        Note: Make sure CAPSLOCK is off.
+    5. Rotation System: Nintendo Rotation System
+        - https://tetris.fandom.com/wiki/Nintendo_Rotation_System
+       Also, a move/rotation of tetromino is legal only if the new location is empty 
+	    and doesn't exceed the boundary of the board.
+    6. Please resize your terminal. It should contain at least 43x108 characters.
+    7. Have fun! Besides, can you find the invisible cat?
+
+- Please enter your name (At most 15 letters or numbers):

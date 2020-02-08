@@ -1,0 +1,38 @@
+g++ -c match.cpp
+match.cpp:7:5: 錯誤：「int Match::next_block_coordinate [2][2]」 is not a static data member of 「class Match」
+    7 | int Match::next_block_coordinate[2][2] = {{19, 41}, {19, 95}};
+      |     ^~~~~
+match.cpp: In constructor 「Match::Match(int*, char**)」:
+match.cpp:55:35: 錯誤：expected 「;」 before 「:」 token
+   55 |  gettimeofday(&tetris_tv[0], NULL):
+      |                                   ^
+      |                                   ;
+match.cpp: In member function 「void Match::buf_append_score(int)」:
+match.cpp:167:30: 錯誤：「len」 在此作用欄位中尚未宣告
+  167 |  Screen::append_gotorc(buf, &len, next_block_coordinate[player][0], next_block_coordinate[player][1]);
+      |                              ^~~
+match.cpp:167:35: 錯誤：「next_block_coordinate」 在此作用欄位中尚未宣告
+  167 |  Screen::append_gotorc(buf, &len, next_block_coordinate[player][0], next_block_coordinate[player][1]);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~
+match.cpp: In member function 「void Match::check_status(int)」:
+match.cpp:242:18: 錯誤：no matching function for call to 「Match::buf_append_next()」
+  242 |  buf_append_next();
+      |                  ^
+match.cpp:146:6: 附註：candidate: 「void Match::buf_append_next(int)」
+  146 | void Match::buf_append_next(int player) {
+      |      ^~~~~
+match.cpp:146:6: 附註：  candidate expects 1 argument, 0 provided
+match.cpp:244:3: 錯誤：「freeze」 was not declared in this scope; did you mean 「free」?
+  244 |   freeze(player);
+      |   ^~~~~~
+      |   free
+match.cpp: At global scope:
+match.cpp:252:6: 錯誤：no declaration matches 「void Match::freeze(int)」
+  252 | void Match::freeze(int player) {
+      |      ^~~~~
+match.cpp:252:6: 附註：no functions named 「void Match::freeze(int)」
+In file included from match.cpp:1:
+match.h:17:7: 附註：「class Match」 defined here
+   17 | class Match {
+      |       ^~~~~
+make: *** [Makefile:12: match.o] Error 1
